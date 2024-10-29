@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/46ca21a7e3.js" crossorigin="anonymous"></script>
+  <title>ARIZONA
+  KEYBORD</title>
+</head>
+<body>
+    <h1>KEYBORD </h1>
+    <div id="float-board"><button type="button" ><span class="fa fa-keyboard fa-5x"></span></button></div>
+    
+    <form action="" accept-charset="utf-8">
+      <section id="change" class="board">
+      <div class="input">
+         <button id="opene" type="button" onclick="openEmoji()"><span class="fa fa-smile fa-bold fa-2x"></span></button>
+         <button id="openl" style="display:none;" type="button" onclick="openletters()"><span class="fa fa-keyboard fa-2x"></span></button>
+
+        <input class="text" type="text" name="display" onclick="closeB()" placeholder="type..." />
+        <button type="submit"><span class="fa fa-paper-plane fa-2x"></span></button>
+        <button id="showk" type="button" onclick="show()"><span class="fa fa-keyboard fa-2x"></span></button>
+        <button type="button" onclick="closeB()" id="close" style="display:none;"><span class="fa fa-circle-xmark fa-2x fa-bold"></span></button>
+      </div><hr>
+      
+      <section id="letters">
+      <div class="row">
+        <input type="button" name="" id="" value="1" onclick="display.value+='1'" />
+        <input type="button" name="" id="" value="2" onclick="display.value+='2'" />
+        <input type="button" name="" id="" value="3" onclick="display.value+='3'" />
+        <input type="button" name="" id="" value="4" onclick="display.value+='4'" />
+        <input type="button" name="" id="" value="5" onclick="display.value+='5'" />
+        <input type="button" name="" id="" value="6" onclick="display.value+='6'" />
+        <input type="button" name="" id="" value="7" onclick="display.value+='7'" />
+        <input type="button" name="" id="" value="8" onclick="display.value+='8'" />
+        <input type="button" name="" id="" value="9" onclick="display.value+='9'" />
+        <input type="button" name="" id="" value="0" onclick="display.value+='0'" />
+      </div>
+    <div class="row">
+      <input type="button" name="" id="up" value="q" onclick="display.value+='q'"/>
+      <input type="button" name="" id="up" value="w" onclick="display.value+='w'"/>
+      <input type="button" name="" id="up" value="e" onclick="display.value+='e'"/>
+      <input type="button" name="" id="up" value="r" onclick="display.value+='r'"/>
+      <input type="button" name="" id="up" value="t" onclick="display.value+='t'"/>
+      <input type="button" name="" id="up" value="y" onclick="display.value+='y'"/>
+      <input type="button" name="" id="up" value="u" onclick="display.value+='u'"/>
+      <input type="button" name="" id="up" value="i" onclick="display.value+='i'"/>
+      <input type="button" name="" id="up" value="o" onclick="display.value+='o'"/>
+      <input type="button" name="" id="up" value="p" onclick="display.value+='p'"/>
+    </div>
+    <div class="row">
+      <input type="button" name="" id="up" value="a" onclick="display.value+='a'"/>
+      <input type="button" name="" id="up" value="s" onclick="display.value+='s'"/>
+      <input type="button" name="" id="up" value="d" onclick="display.value+='d'"/>
+      <input type="button" name="" id="up" value="f" onclick="display.value+='f'"/>
+      <input type="button" name="" id="up" value="g" onclick="display.value+='g'"/>
+      <input type="button" name="" id="up" value="h" onclick="display.value+='h'"/>
+      <input type="button" name="" id="up" value="j" onclick="display.value+='j'"/>
+      <input type="button" name="" id="up" value="k" onclick="display.value+='k'"/>
+      <input type="button" name="" id="up" value="l" onclick="display.value+='l'"/>
+    </div>
+    <div class="row">
+      <button type="button" onclick="magic()"><span class="fa-solid fa-wand-magic-sparkles"></span></button>
+      <input type="button" name="" id="up" value="z" onclick="display.value+='z'"/>
+      <input type="button" name="" id="up" value="x" onclick="display.value+='x'"/>
+      <input type="button" name="" id="up" value="c" onclick="display.value+='c'"/>
+      <input type="button" name="" id="up" value="v" onclick="display.value+='v'"/>
+      <input type="button" name="" id="up" value="b" onclick="display.value+='b'"/>
+      <input type="button" name="" id="up" value="n" onclick="display.value+='n'"/>
+      <input type="button" name="" id="up" value="m" onclick="display.value+='m'"/>
+      <button type="button" onclick="display.value=display.value.slice(0, -1)"><span class="fa fa-backspace"></span></button>
+    </div>
+    <div class="row">
+      <button id="num" onclick="char()" type="button">?/$#</button>
+      
+      <input type="button" name="" id="up" value="," onclick="display.value+=','"/>
+      <button type="button" name="" id="space" onclick="display.value+='&nbsp;'"><span class="fa fa-keyboard"></span> Space</button>
+      <input type="button" name="" id="up" value="." onclick="display.value+='.'"/>
+     <button type="button" onclick="contact()"><span class="fa fa-comment"></span></button>
+    </div>
+    </section>
+    <section id="emojis">
+      <div class="row">
+        <input type="button" onclick="display.value+='😀'" value="😀" />
+        <input type="button" onclick="display.value+='😃'" value="😃"/>
+        <input type="button" onclick="display.value+='😄'" value="😄"/>
+        <input type="button" onclick="display.value+='😁'" value="😁"/>
+        <input type="button" onclick="display.value+='😆'" value="😆"/>
+        <input type="button" onclick="display.value+='😅'" value="😅"/>
+        <input type="button" onclick="display.value+='😂'" value="😂"/>
+        <input type="button" onclick="display.value+='🤣'" value="🤣"/>
+        <input type="button" onclick="display.value+='😭'" value="😭"/>
+      </div>
+      <div class="row">
+        <input type="button" onclick="display.value+='😉'" value="😉"/>
+        <input type="button" onclick="display.value+='😗'" value="😗"/>
+        <input type="button" onclick="display.value+='😙'" value="😙"/>
+        <input type="button" onclick="display.value+='😚'" value="😚"/>
+        <input type="button" onclick="display.value+='😘'" value="😘"/>
+        <input type="button" onclick="display.value+='🥰'" value="🥰"/>
+        <input type="button" onclick="display.value+='😍'" value="😍"/>
+        <input type="button" onclick="display.value+='🤩'" value="🤩"/>
+        <input type="button" onclick="display.value+='🥳'" value="🥳"/>
+      </div>
+      <div class="row">
+        <input type="button" onclick="display.value+='🙃'" value="🙃"/>
+        <input type="button" onclick="display.value+='🙂'" value="🙂"/>
+        <input type="button" onclick="display.value+='😊'" value="😊"/>
+        <input type="button" onclick="display.value+='☺️'" value="☺️"/>
+        <input type="button" onclick="display.value+='😌'" value="😌"/>
+        <input type="button" onclick="display.value+='😏'" value="😏"/>
+        <input type="button" onclick="display.value+='😴'" value="😴"/>
+        <input type="button" onclick="display.value+='😪'" value="😪"/>
+        <input type="button" onclick="display.value+='🤤'" value="🤤"/>
+      </div>
+      <div class="row">
+        <input type="button" onclick="display.value+='😋'" value="😋"/>
+        <input type="button" onclick="display.value+='😛'" value="😛"/>
+        <input type="button" onclick="display.value+='😝'" value="😝"/>
+        <input type="button" onclick="display.value+='😜'" value="😜"/>
+        <input type="button" onclick="display.value+='🤪'" value="🤪"/>
+        <input type="button" onclick="display.value+='🥴'" value="🥴"/>
+        <input type="button" onclick="display.value+='😔'" value="😔"/>
+        <input type="button" onclick="display.value+='🥺'" value="🥺"/>
+        <input type="button" onclick="display.value+='😬'" value="😬"/>
+      </div>
+      <div class="row">
+        <input type="button" onclick="display.value+='😑'" value="😑"/>
+        <input type="button" onclick="display.value+='😐'" value="😐"/>
+        <input type="button" onclick="display.value+='😶'" value="😶"/>
+        <input type="button" onclick="display.value+='🤐'" value="🤐"/>
+        <input type="button" onclick="display.value+='🤔'" value="🤔"/>
+        <input type="button" onclick="display.value+='🤫'" value="🤫"/>
+        <input type="button" onclick="display.value+='🤭'" value="🤭"/>
+        <input type="button" onclick="display.value+='🥱'" value="🥱"/>
+        <input type="button" onclick="display.value+='🤗'" value="🤗"/>
+      </div>
+      <div class="row">
+        <input type="button" onclick="display.value+='😱'" value="😱"/>
+        <input type="button" onclick="display.value+='🤨'" value="🤨"/>
+        <input type="button" onclick="display.value+='🧐'" value="🧐"/>
+        <input type="button" onclick="display.value+='😒'" value="😒"/>
+        <input type="button" onclick="display.value+='🙄'" value="🙄"/>
+        <input type="button" onclick="display.value+='😤'" value="😤"/>
+        <input type="button" onclick="display.value+='😠'" value="😠"/>
+        <input type="button" onclick="display.value+='😡'" value="😡"/>
+        <input type="button" onclick="display.value+='🤬'" value="🤬"/>
+      </div>
+      <div class="row">
+        <input type="button" onclick="display.value+='😞'" value="😞"/>
+        <input type="button" onclick="display.value+='😓'" value="😓"/>
+        <input type="button" onclick="display.value+='😟'" value="😟"/>
+        <input type="button" onclick="display.value+='😥'" value="😥"/>
+        <input type="button" onclick="display.value+='😢'" value="😢"/>
+        <input type="button" onclick="display.value+='☹️'" value="☹️"/>
+        <input type="button" onclick="display.value+='🙁'" value="🙁"/>
+        <input type="button" onclick="display.value+='😕'" value="😕"/>
+        <input type="button" onclick="display.value+='😰'" value="😰"/>
+      </div>
+      
+      <div class="row">
+        <input type="button" onclick="display.value+='😨'" value="😨"/>
+        <input type="button" onclick="display.value+='😧'" value="😧"/>
+        <input type="button" onclick="display.value+='😦'" value="😦"/>
+        <input type="button" onclick="display.value+='😮'" value="😮"/>
+        <input type="button" onclick="display.value+='😯'" value="😯"/>
+        <input type="button" onclick="display.value+='😲'" value="😲"/>
+        <input type="button" onclick="display.value+='😳'" value="😳"/>
+        <input type="button" onclick="display.value+='🤯'" value="🤯"/>
+        <input type="button" onclick="display.value+='😖'" value="😖"/>
+      </div>
+      <div class="row">
+        <input type="button" onclick="display.value+='👍'" value="👍"/>
+        <input type="button" onclick="display.value+='👎'" value="👎"/>
+        <input type="button" onclick="display.value+='🤝'" value="🤝"/>
+        <input type="button" onclick="display.value+='🙏'" value="🙏"/>
+        <input type="button" onclick="display.value+='👋'" value="👋"/>
+        <input type="button" onclick="display.value+='👏'" value="👏"/>
+        <input type="button" onclick="display.value+='🤲'" value="🤲"/>
+        <input type="button" onclick="display.value+='🖕'" value="🖕"/>
+        <input type="button" onclick="display.value+='👌'" value="👌"/>
+      </div>
+      <div class="row">
+        <button style="float: left;" type="button" name="" id="space" onclick="display.value+='&nbsp;'"><span class="fa fa-keyboard"></span> Space</button>
+     <button style="float: right;" type="button" onclick="display.value=display.value.slice(0, -1)"><span class="fa fa-backspace"></span></button>
+      </div>
+      
+    </section>
+     <section id="numbers">
+      <div class="row">
+         <input type="button" name="" id="up" value="₦" onclick="display.value+='₦'"/>
+         <input type="button" name="" id="up" value="$" onclick="display.value+='$'"/>
+         <input type="button" name="" id="up" value="₹" onclick="display.value+='₹'"/>
+         <input type="button" name="" id="up" value="¥" onclick="display.value+='¥'"/>
+         <input type="button" name="" id="up" value="₱" onclick="display.value+='₱'"/>
+         <input type="button" name="" id="up" value="€" onclick="display.value+='€'"/>
+         <input type="button" name="" id="up" value="£" onclick="display.value+='£'"/>
+         <input type="button" name="" id="up" value="¢" onclick="display.value+='¢'"/>
+         <input type="button" name="" id="up" value="&" onclick="display.value+='&'"/>
+         <input type="button" name="" id="up" value="@" onclick="display.value+='@'"/>
+      </div>
+      <div class="row">
+         <input type="button" name="" id="up" value="#" onclick="display.value+='#'"/>
+         <input type="button" name="" id="up" value="_" onclick="display.value+='_'"/>
+         <input type="button" name="" id="up" value="—" onclick="display.value+='—'"/>
+         <input type="button" name="" id="up" value="-" onclick="display.value+='-'"/>
+         <input type="button" name="" id="up" value="±" onclick="display.value+='±'"/>
+         <input type="button" name="" id="up" value="+" onclick="display.value+='+'"/>
+         <input type="button" name="" id="up" value="[" onclick="display.value+='['"/>
+         <input type="button" name="" id="up" value="]" onclick="display.value+=']'"/>
+         <input type="button" name="" id="up" value="<" onclick="display.value+='<'"/>
+         <input type="button" name="" id="up" value=">" onclick="display.value+='>'"/>
+      </div>
+      <div class="row">
+         <input type="button" name="" id="up" value="{" onclick="display.value+='{'"/>
+         <input type="button" name="" id="up" value="}" onclick="display.value+='}'"/>
+         <input type="button" name="" id="up" value="*" onclick="display.value+='*'"/>
+         <input type="button" name="" id="up" value="★" onclick="display.value+='★'"/>
+         <input type="button" name="" id="up" value="†" onclick="display.value+='†'"/>
+         <input type="button" name="" id="up" value="‡" onclick="display.value+='‡'"/>
+         <input type="button" name="" id="up" value="„" onclick="display.value+='„'"/>
+         <input type="button" name="" id="up" value="“" onclick="display.value+='“'"/>
+         <input type="button" name="" id="up" value="”" onclick="display.value+='”'"/>
+         <input type="button" name="" id="up" value=":" onclick="display.value+=':'"/>
+      </div>
+      <div class="row">
+         <input type="button" name="" id="up" value="«" onclick="display.value+='«'"/>
+         <input type="button" name="" id="up" value="»" onclick="display.value+='»'"/>
+         <input type="button" name="" id="up" value="‚" onclick="display.value+=','"/>
+         <input type="button" name="" id="up" value="‘" onclick="display.value+='‘'"/>
+         <input type="button" name="" id="up" value="’" onclick="display.value+='’'"/>
+         <input type="button" name="" id="up" value="‹" onclick="display.value+='‹'"/>
+         <input type="button" name="" id="up" value="›" onclick="display.value+='›'"/>
+         <input type="button" name="" id="up" value="¡" onclick="display.value+='¡'"/>
+         <input type="button" name="" id="up" value="!" onclick="display.value+='!'"/>
+         <input type="button" name="" id="up" value=";" onclick="display.value+=';'"/>
+      </div>
+      <div class="row">
+         <input type="button" name="" id="up" value="¿" onclick="display.value+='¿'"/>
+         <input type="button" name="" id="up" value="?" onclick="display.value+='?'"/>
+         <input type="button" name="" id="up" value="‽" onclick="display.value+='‽'"/>
+         <input type="button" name="" id="up" value="/" onclick="display.value+='/'"/>
+         <input type="button" name="" id="up" value="\" onclick="display.value+='\'"/>
+         <input type="button" name="" id="up" value="~" onclick="display.value+='~'"/>
+         <input type="button" name="" id="up" value="`" onclick="display.value+='`'"/>
+         <input type="button" name="" id="up" value="|" onclick="display.value+='|'"/>
+         <input type="button" name="" id="up" value="√" onclick="display.value+='√'"/>
+         <input type="button" name="" id="up" value="÷" onclick="display.value+='÷'"/>
+      </div>
+      <div class="row">
+         <input type="button" name="" id="up" value="♣" onclick="display.value+='♣'"/>
+         <input type="button" name="" id="up" value="♠" onclick="display.value+='♠'"/>
+         <input type="button" name="" id="up" value="♪" onclick="display.value+='♪'"/>
+         <input type="button" name="" id="up" value="♥" onclick="display.value+='♥'"/>
+         <input type="button" name="" id="up" value="♦" onclick="display.value+='♦'"/>
+         <input type="button" name="" id="up" value="Ω" onclick="display.value+='Ω'"/>
+         <input type="button" name="" id="up" value="Π" onclick="display.value+='Π'"/>
+         <input type="button" name="" id="up" value="μ" onclick="display.value+='μ'"/>
+         <input type="button" name="" id="up" value="π" onclick="display.value+='π'"/>
+         <input type="button" name="" id="up" value="§" onclick="display.value+='§'"/>
+      </div>
+      <div class="row">
+         <input type="button" name="" id="up" value="¶" onclick="display.value+='¶'"/>
+         <input type="button" name="" id="up" value="∆" onclick="display.value+='∆'"/>
+         <input type="button" name="" id="up" value="′" onclick="display.value+='′'"/>
+         <input type="button" name="" id="up" value="″" onclick="display.value+='″'"/>
+         <input type="button" name="" id="up" value="°" onclick="display.value+='°'"/>
+         <input type="button" name="" id="up" value="(" onclick="display.value+='('"/>
+         <input type="button" name="" id="up" value=")" onclick="display.value+=')'"/>
+         <input type="button" name="" id="up" value="←" onclick="display.value+='←'"/>
+         <input type="button" name="" id="up" value="↑" onclick="display.value+='↑'"/>
+         <input type="button" name="" id="up" value="↓" onclick="display.value+='↓'"/>
+      </div>
+      <div class="row">
+         <input type="button" name="" id="up" value="→" onclick="display.value+='→'"/>
+         <input type="button" name="" id="up" value="^" onclick="display.value+='^'"/>
+         <input type="button" name="" id="up" value="=" onclick="display.value+='='"/>
+         <input type="button" name="" id="up" value="∞" onclick="display.value+='∞'"/>
+         <input type="button" name="" id="up" value="≠" onclick="display.value+='≠'"/>
+         <input type="button" name="" id="up" value="≈" onclick="display.value+=''≈"/>
+         <input type="button" name="" id="up" value="✓" onclick="display.value+='✓'"/>
+         <input type="button" name="" id="up" value="©" onclick="display.value+='©'"/>
+         <input type="button" name="" id="up" value="®" onclick="display.value+='®'"/>
+         <input type="button" name="" id="up" value="™" onclick="display.value+='™'"/>
+      </div>
+      <div class="row">
+         <button style="float: left;" type="button" name="" id="space" onclick="display.value+='&nbsp;'"><span class="fa fa-keyboard"></span> Space</button>
+         <input type="button" name="" id="up" value="‰" onclick="display.value+='‰'"/>
+         <input type="button" name="" id="up" value="%" onclick="display.value+='%'"/>
+         <input type="button" name="" id="up" value="℅" onclick="display.value+='℅'"/>
+         <input type="button" name="" id="up" value="." onclick="display.value+='.'"/>
+         <button style="float: right;" type="button" onclick="display.value=display.value.slice(0, -1)"><span class="fa fa-backspace"></span></button>
+      </div>
+    </section>
+    <section id="theme">
+      <div class="rand">
+        <button style="background-color: blue;" onclick="blue()" type="button">BLUE</button>
+        <button s
